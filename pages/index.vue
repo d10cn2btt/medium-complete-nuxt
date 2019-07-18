@@ -5,6 +5,7 @@
       <h1 class="title">
         medium-complete-nuxt
       </h1>
+      {{$store.state.msg}}
       <h2 class="subtitle">
         https://medium.com/@onlykiosk/the-new-complete-nuxt-2-4-course-e30a561e6800
       </h2>
@@ -34,6 +35,11 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  head() {
+    return {
+      title: 'HOME: pages/index.vue'
+    }
   }
 }
 </script>
